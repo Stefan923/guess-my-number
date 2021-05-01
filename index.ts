@@ -1,7 +1,7 @@
 'use strict';
 
-var MINIMUM_VALUE = 1;
-var MAXIMUM_VALUE = 10;
+const MINIMUM_VALUE = 1;
+const MAXIMUM_VALUE = 10;
 
 var game = {
     'numberToGuess': 0,
