@@ -5,7 +5,7 @@ const MAXIMUM_VALUE = 10;
 
 var game = {
     'numberToGuess': 0,
-    'turnCount': 0
+    'attemptsCount': 0
 };
 
 document.getElementById('generateBtn').onclick = function(): void {
@@ -13,10 +13,10 @@ document.getElementById('generateBtn').onclick = function(): void {
 };
 
 document.getElementById('submitBtn').onclick = function(): void {
-    game.turnCount++;
+    game.attemptsCount++;
     var inputNumber: string = (<HTMLInputElement>document.getElementById('userInput')).value;
     if (parseInt(inputNumber) === game.numberToGuess) {
-      window.alert(`GG! Number of turns: ${ game.turnCount }`);
+      window.alert(`GG! Number of attempts: ${ game.attemptsCount }`);
     } else {
       window.alert(`You failed! Try again.`);
     }
