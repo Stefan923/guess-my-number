@@ -3,14 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Guess My Number</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-  <body>
-    <form>
-      <label for="number">Input number:</label><br>
-      <input type="text" id="userInput" name="number"><br>
-    </form>
-    <button id="submitBtn">Submit</button>
-    <button id="generateBtn">Generate</button>
+    <div class="panel-box">
+      <h2>Guess My Number</h2>
+      <form>
+        <div class="input-box">
+          <input type="text" id="user-input">
+          <label>Input number</label>
+        </div>
+        <a id="btn-submit" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+        <a id="btn-reset" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Reset
+        </a>
+      </form>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
